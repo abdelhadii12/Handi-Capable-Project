@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Site Magnifique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="main-nav">
+        <!-- Logo à droite -->
+        <div class="logo">
+            <img src="img/LOGO.png" alt="Logo du site - Accessibilité pour tous">
+        </div>
+
+        <!-- Boutons Accueil et Contact à droite -->
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html'">Accueil</button>
+            <button onclick="window.location.href='contact.html'">Contact</button>
+        </div>
+
+        <!-- Barre de recherche au centre -->
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher..." aria-label="Rechercher sur le site">
+            <button aria-label="Rechercher"><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <!-- Formulaire de contact -->
+    <main>
+        <section id="contact" class="section">
+            <h2>Formulaire de contact</h2>
+            <form id="contactForm">
+                <label for="nom">Nom (obligatoire) :</label>
+                <input type="text" id="nom" name="nom" required aria-required="true">
+
+                <label for="prenom">Prénom (obligatoire) :</label>
+                <input type="text" id="prenom" name="prenom" required aria-required="true">
+
+                <fieldset>
+                    <legend>Adresse</legend>
+                    <label for="numero">Numéro et rue :</label>
+                    <input type="text" id="numero" name="numero">
+
+                    <label for="code_postal">Code postal :</label>
+                    <input type="text" id="code_postal" name="code_postal" placeholder="(5 chiffres : ex.69008)">
+
+                    <label for="ville">Ville :</label>
+                    <input type="text" id="ville" name="ville">
+                </fieldset>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="ex.0615802010">
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="message" role="alert" aria-live="assertive"></div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="professional-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Nous sommes dédiés à l'accessibilité numérique pour tous.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p>Email: contact@siteaccessible.fr</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Tous droits réservés. Site conçu pour l'accessibilité.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
