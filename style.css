@@ -1,4 +1,3 @@
-/* Style général */
 body {
     background-image: url('fond.jpg');
     background-size: cover;
@@ -8,37 +7,34 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-size: 18px; /* Taille de texte augmentée */
+    font-size: 18px;
 }
 
-/* Barre de navigation */
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007BFF; /* Fond bleu */
+    background-color: #007BFF;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo transparent et plus proche */
 .logo img {
     max-width: 150px;
     height: auto;
-    opacity: 0.9; /* Transparence */
-    margin-right: 20px; /* Plus proche des autres éléments */
+    opacity: 0.9;
+    margin-right: 20px;
 }
 
-/* Boutons Accueil et Contact à droite */
 .nav-buttons {
     display: flex;
     gap: 10px;
 }
 
 .nav-buttons button {
-    background-color: transparent; /* Boutons transparents */
-    color: white; /* Texte blanc */
-    border: 2px solid white; /* Bordure blanche */
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1em;
@@ -47,11 +43,10 @@ body {
 }
 
 .nav-buttons button:hover {
-    background-color: white; /* Fond blanc au survol */
-    color: #007BFF; /* Texte bleu au survol */
+    background-color: white;
+    color: #007BFF;
 }
 
-/* Barre de recherche au centre */
 .search-bar {
     display: flex;
     align-items: center;
@@ -63,20 +58,20 @@ body {
 .search-bar input {
     flex-grow: 1;
     padding: 10px;
-    border: 2px solid white; /* Bordure blanche */
+    border: 2px solid white;
     border-radius: 5px 0 0 5px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
-    color: #333; /* Texte sombre pour contraste */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
     font-size: 1em;
 }
 
 .search-bar input::placeholder {
-    color: #666; /* Placeholder sombre */
+    color: #666;
 }
 
 .search-bar button {
-    background-color: white; /* Fond blanc */
-    color: #007BFF; /* Texte bleu */
+    background-color: white;
+    color: #007BFF;
     border: none;
     padding: 10px 15px;
     border-radius: 0 5px 5px 0;
@@ -85,11 +80,10 @@ body {
 }
 
 .search-bar button:hover {
-    background-color: #0056b3; /* Fond bleu foncé au survol */
-    color: white; /* Texte blanc au survol */
+    background-color: #0056b3;
+    color: white;
 }
 
-/* Bannière */
 header {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -97,7 +91,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenu principal */
 main {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -111,26 +104,25 @@ main {
 }
 
 h1 {
-    font-size: 2.5em; /* Taille de texte augmentée */
+    font-size: 2.5em;
     color: #007BFF;
 }
 
 h2 {
-    font-size: 2em; /* Taille de texte augmentée */
+    font-size: 2em;
     color: #0056b3;
 }
 
 h3 {
-    font-size: 1.5em; /* Taille de texte augmentée */
+    font-size: 1.5em;
     color: #004080;
 }
 
 p, ul {
-    font-size: 1.1em; /* Taille de texte augmentée */
+    font-size: 1.1em;
     line-height: 1.8;
 }
 
-/* Formulaire de contact */
 form label {
     display: block;
     margin-top: 10px;
@@ -168,7 +160,6 @@ form button:hover {
     background-color: #000000;
 }
 
-/* Message d'erreur ou de succès */
 #message {
     margin-top: 15px;
     padding: 10px;
@@ -186,7 +177,6 @@ form button:hover {
     color: #721c24;
 }
 
-/* Pied de page professionnel */
 .professional-footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -238,7 +228,6 @@ form button:hover {
     margin-top: 20px;
 }
 
-/* Carrousel */
 .carousel {
     position: relative;
     width: 100%;
@@ -262,7 +251,6 @@ form button:hover {
     display: block;
 }
 
-/* Message de confirmation */
 #confirmationMessage {
     padding: 15px;
     border-radius: 5px;
